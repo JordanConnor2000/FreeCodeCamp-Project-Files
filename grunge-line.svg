@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 20" preserveAspectRatio="none">
+  <defs>
+    <filter id="grunge" x="‑10%" y="‑10%" width="120%" height="120%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="2" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="2"/>
+    </filter>
+  </defs>
+  <rect x="0" y="8" width="360" height="4"
+        fill="var(--line-color, #CC3333)"
+        filter="url(#grunge)"/>
+</svg>
